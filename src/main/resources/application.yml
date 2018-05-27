@@ -1,0 +1,29 @@
+---
+server:
+  port: 8001
+
+
+#192.168.0.100
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mutualFund
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+multidb:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/attendee
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+
+
+
+
+
+
