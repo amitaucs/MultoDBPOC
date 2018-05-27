@@ -10,7 +10,12 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/mutualFund
     username: root
     password: root
-    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+   # driver-class-name: com.mysql.jdbc.Driver
 
 
 multidb:
@@ -18,9 +23,11 @@ multidb:
     url: jdbc:mysql://127.0.0.1:3306/attendee
     username: root
     password: root
-    driver-class-name: com.mysql.jdbc.Driver
-
-
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
 
 
 
